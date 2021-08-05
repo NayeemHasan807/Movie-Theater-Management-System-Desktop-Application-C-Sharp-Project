@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{01E0E5A3-3F38-4BF0-BEAA-56D503AA44F3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MTMS.App.GUI</RootNamespace>
+    <AssemblyName>MTMS.App.GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DeligateClassForMovie.cs" />
+    <Compile Include="MetroFormBookingDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MetroFormBookingDashboard.Designer.cs">
+      <DependentUpon>MetroFormBookingDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetroFormBookingForCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MetroFormBookingForCustomer.Designer.cs">
+      <DependentUpon>MetroFormBookingForCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetroFormBookingForMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MetroFormBookingForMember.Designer.cs">
+      <DependentUpon>MetroFormBookingForMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetroFormDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MetroFormDashboard.Designer.cs">
+      <DependentUpon>MetroFormDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetroFormEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MetroFormEmployee.Designer.cs">
+      <DependentUpon>MetroFormEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetroFormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MetroFormLogin.Designer.cs">
+      <DependentUpon>MetroFormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetroFormManageMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MetroFormManageMember.Designer.cs">
+      <DependentUpon>MetroFormManageMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetroFormMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MetroFormMovie.Designer.cs">
+      <DependentUpon>MetroFormMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetroFormSeat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MetroFormSeat.Designer.cs">
+      <DependentUpon>MetroFormSeat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetroFormSeeOwnInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MetroFormSeeOwnInfo.Designer.cs">
+      <DependentUpon>MetroFormSeeOwnInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetroFromPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MetroFromPayment.Designer.cs">
+      <DependentUpon>MetroFromPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MetroFormBookingDashboard.resx">
+      <DependentUpon>MetroFormBookingDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetroFormBookingForCustomer.resx">
+      <DependentUpon>MetroFormBookingForCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetroFormBookingForMember.resx">
+      <DependentUpon>MetroFormBookingForMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetroFormDashboard.resx">
+      <DependentUpon>MetroFormDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetroFormEmployee.resx">
+      <DependentUpon>MetroFormEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetroFormLogin.resx">
+      <DependentUpon>MetroFormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetroFormMovie.resx">
+      <DependentUpon>MetroFormMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetroFormSeat.resx">
+      <DependentUpon>MetroFormSeat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetroFormSeeOwnInfo.resx">
+      <DependentUpon>MetroFormSeeOwnInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetroFromPayment.resx">
+      <DependentUpon>MetroFromPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Windows-10-user-icon-big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MTMS.App.Entity\MTMS.App.Entity.csproj">
+      <Project>{ac9702d2-4715-413e-80e6-355383b3a7cb}</Project>
+      <Name>MTMS.App.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MTMS.App.FrameWork\MTMS.App.FrameWork.csproj">
+      <Project>{709806bd-0b7c-4084-958b-e18283fe4bd9}</Project>
+      <Name>MTMS.App.FrameWork</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MTMS.App.Repository\MTMS.App.Repository.csproj">
+      <Project>{ea5f493f-a8d6-49d8-8c0a-52e921d0798e}</Project>
+      <Name>MTMS.App.Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
